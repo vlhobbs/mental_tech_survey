@@ -91,7 +91,7 @@ techhealth['mental_vs_physical']=techhealth['mental_vs_physical'].map({'Yes':2,'
 
 #techhealth['comments'] = pd.Series(commentList)
 
-#print(techhealth.describe())
+print(techhealth.describe())
 #print(techhealth['Gender'].count)
 #print("Gender counts:")
 #print(techhealth["Gender"].value_counts())
@@ -100,5 +100,5 @@ techhealth['mental_vs_physical']=techhealth['mental_vs_physical'].map({'Yes':2,'
 
 techhealth.to_csv('mental_health_out.csv')
 
-#techhealth['Gender'].hist(bins=3)
-#plt.show()
+techhealth['Gender'].hist(bins=3)
+plt.show()
